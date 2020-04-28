@@ -7,11 +7,19 @@
 //
 
 import WatchKit
+import Combine
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    var disposable: AnyCancellable?
+
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        disposable = Timer.publish(every: 1, on: .main, in: .common)
+            .autoconnect()
+            .timeout(60, scheduler: DispatchQueue.main)
+            .sink { time in
+                print("⏰ It's now \(time)")
+            }
     }
 
     func applicationDidBecomeActive() {

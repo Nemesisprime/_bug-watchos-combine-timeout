@@ -500,9 +500,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B38SLMQ5V3;
+				DEVELOPMENT_TEAM = U63T6R2H7J;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.McKesson.CombineWatchosTimeOut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gryphon.CombineWatchosTimeOut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -513,9 +513,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B38SLMQ5V3;
+				DEVELOPMENT_TEAM = U63T6R2H7J;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.McKesson.CombineWatchosTimeOut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gryphon.CombineWatchosTimeOut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
