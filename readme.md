@@ -1,4 +1,4 @@
-#Overview
+## Overview
 
 When using Combine's [timeout](https://developer.apple.com/documentation/combine/anypublisher/3204263-timeout) operator on watchOS, the application will immediately crash regardless of options provided.
 
@@ -19,7 +19,7 @@ var cancellable = Timer.publish(every: 1, on: .main, in: .common)
 
 
 
-####Experimenting with Queues
+### Experimenting with Queues
 
 Attempting to create use DispatchQueue with any combination of options also causes the crash:
 
@@ -38,7 +38,7 @@ func applicationDidFinishLaunching() {
 
 
 
-#### Tested Devices
+### Tested Devices
 
 - watchOS simulator (Xcode 11.4.1)
 - Apple Watch Series 3, watchOS 6.x.x
