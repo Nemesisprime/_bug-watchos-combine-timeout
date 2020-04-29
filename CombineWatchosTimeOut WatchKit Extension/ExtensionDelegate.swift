@@ -13,10 +13,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     var disposable: AnyCancellable?
 
+    lazy var customQueue = DispatchQueue(label: "CustomQueue")
+
     func applicationDidFinishLaunching() {
         disposable = Timer.publish(every: 1, on: .main, in: .common)
             .autoconnect()
-            .timeout(60, scheduler: DispatchQueue.main)
+            .timeout(60, scheduler: customQueue)
             .sink { time in
                 print("⏰ It's now \(time)")
             }
